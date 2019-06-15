@@ -51,4 +51,4 @@ manifest: ## Create an push manifest
 	$(NAME):$(ARCH3)
 	docker manifest push --purge $(NAME):latest
 serve: ## Preview and live modify with auto-reloading
-	docker run -it --rm $(NAME):$(GOARCH)
+	docker run -d --rm $(NAME):$(GOARCH)
