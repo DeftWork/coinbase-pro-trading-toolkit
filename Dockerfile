@@ -18,6 +18,6 @@ LABEL mantainer="Eloy Lopez <elswork@gmail.com>" \
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 COPY . /usr/src/app 
-# RUN npm install -g typescript@2.7.2 
+RUN npm install -g ts-node 
 RUN yarn add coinbase-pro-trading-toolkit
 #CMD ["yarn", "test"]
